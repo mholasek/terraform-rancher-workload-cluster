@@ -174,6 +174,6 @@ variable "drain_force" {
 
 variable "drain_timeout" {
   default     = 60
-  type        = int
+  type        = number
   description = "Node drain timeout"
 }
