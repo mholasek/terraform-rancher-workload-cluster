@@ -5,8 +5,6 @@ terraform {
 locals {
   name                  = var.name
   aws_region            = var.aws_region
-  access_key            = var.aws_access_key
-  secret_key            = var.aws_secret_key
   master_instance_type  = var.master_instance_type
   worker_instance_type  = var.worker_instance_type
   master_node_count     = var.master_node_count
@@ -44,6 +42,4 @@ locals {
 
 provider "aws" {
   region = local.aws_region
-  access_key = local.access_key
-  secret_key = local.secret_key
 }
