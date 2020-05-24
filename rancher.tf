@@ -35,6 +35,9 @@ resource "rancher2_cluster" "cluster" {
         extra_args = local.scheduler_extra_args
       }
     }
+    ingress {
+      options = local.ingress_options
+    }
   }
 
 

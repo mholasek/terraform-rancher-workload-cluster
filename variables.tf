@@ -136,6 +136,12 @@ variable "kubelet_extra_args" {
   description = "extra_args for kubelet"
 }
 
+variable "ingress_options" {
+  default     = null
+  type        = map
+  description = "options for nginx ingress controller"
+}
+
 variable "master_tags" {
   default     = {}
   type        = map
