@@ -29,3 +29,7 @@ output "worker_security_groups" {
 output "default_worker_security_group_id" {
   value = aws_security_group.cluster.id
 }
+
+output "rancher2_cluster_cluster" {
+  value = rancher2_cluster_sync.cluster
+}
